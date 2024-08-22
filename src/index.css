@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Noto+Serif+SC:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-tea-white text-tea-black;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-serif;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+    .btn {
+        @apply bg-tea-red text-tea-white py-3 px-8 rounded-none hover:bg-tea-brown transition duration-300 transform hover:-translate-y-1 hover:shadow-lg;
+    }
+
+    .section-title {
+        @apply text-5xl font-bold mb-12 text-left font-serif text-tea-green;
+    }
+
+    .card {
+        @apply bg-tea-white p-8 border-l-8 border-tea-brown shadow-xl transition duration-300 hover:shadow-2xl;
+    }
 }

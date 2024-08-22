@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import About from './components/About';
+import Events from './components/Events';
+import GongfuCha from './components/GongfuCha';
+import TeaMasters from './components/TeaMasters';
+import JoinUs from './components/JoinUs';
+import Footer from './components/Footer';
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    return (
+        <div className="font-sans">
+            <Header />
+            <Navigation isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            <main>
+                <About />
+                <Events />
+                <GongfuCha />
+                <TeaMasters />
+                <JoinUs />
+            </main>
+            <Footer />
+        </div>
+    );
+};
 
 export default App;
