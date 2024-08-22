@@ -3,7 +3,7 @@ import { LeafyGreen, Thermometer, Droplet, Award, Clock, Users, Heart, Brain } f
 import GongFuChaPic from './images/gft.jpg';
 
 const FeatureItem = ({ Icon, text }) => (
-    <div className="flex items-center bg-tea-brown bg-opacity-20 p-6 rounded-none">
+    <div className="flex items-center bg-tea-brown bg-opacity-20 p-6 rounded-lg">
         <Icon size={32} className="mr-4 text-tea-red" />
         <span className="text-lg">{text}</span>
     </div>
