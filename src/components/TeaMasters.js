@@ -68,7 +68,7 @@ const TeaMasters = () => (
                 <TeamMember
                     name="Iaroslav Postovalov"
                     role="VP & Chief Tea Officer"
-                    bio="Iaroslav brings years of experience in traditional tea ceremonies and a deep understanding of tea varieties, technology, and history. His passion for tea and enthusiasm for connecting people with this rich tradition make our events truly special."
+                    bio="Iaroslav brings years of experience in traditional tea ceremonies and a deep understanding of tea varieties, technology, and history. His enthusiasm for connecting people with this rich tradition make our events truly special."
                     photo={YariloPic}
                     socialLinks={{
                         linkedin: "https://www.linkedin.com/in/iaroslav-postovalov/",
