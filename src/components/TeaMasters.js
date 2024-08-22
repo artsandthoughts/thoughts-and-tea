@@ -1,11 +1,10 @@
 import React from 'react';
-import { Instagram, Twitter, Linkedin } from 'lucide-react';
+import {SiInstagram, SiLinkedin, SiTelegram, SiX} from '@icons-pack/react-simple-icons';
 import CampusGreenImage from './images/campusgreen.jpg';
 import TeaSelectionImage from './images/gft2.jpg';
 import SolPic from './images/sol.jpg';
 import YariloPic from './images/yarilo.jpg';
 import PetyaPic from './images/petya.jpg';
-
 
 const TeamMember = ({ name, role, bio, photo, socialLinks }) => (
     <div className="bg-tea-white p-6 shadow-xl">
@@ -16,17 +15,22 @@ const TeamMember = ({ name, role, bio, photo, socialLinks }) => (
         <div className="flex space-x-4">
             {socialLinks.instagram && (
                 <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <Instagram size={24} />
+                    <SiInstagram size={24} />
                 </a>
             )}
-            {socialLinks.twitter && (
-                <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <Twitter size={24} />
+            {socialLinks.x && (
+                <a href={socialLinks.x} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
+                    <SiX size={24} />
                 </a>
             )}
             {socialLinks.linkedin && (
                 <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <Linkedin size={24} />
+                    <SiLinkedin size={24} />
+                </a>
+            )}
+            {socialLinks.telegram && (
+                <a href={socialLinks.telegram} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
+                    <SiTelegram size={24} />
                 </a>
             )}
         </div>
@@ -51,18 +55,19 @@ const TeaMasters = () => (
                     bio="Sol is a talented organizer, a poet and a musician. He curates our events and ensures that every gathering is a memorable experience for our members."
                     photo={SolPic}
                     socialLinks={{
-                        twitter: "https://twitter.com/Sol_Astri",
-                        linkedin: "https://www.linkedin.com/in/daniil-gorlov/"
+                        x: "https://x.com/Sol_Astri",
+                        linkedin: "https://www.linkedin.com/in/daniil-gorlov/",
+                        telegram: "https://t.me/SolAstr"
                     }}
                 />
                 <TeamMember
-                    name="Yaroslav Postavolov"
+                    name="Iaroslav Postovalov"
                     role="VP & Chief Tea Officer"
                     bio="Yaroslav brings years of experience in traditional tea ceremonies and deep knowledge of tea varieties, which make our events truly special."
                     photo={YariloPic}
                     socialLinks={{
-                        instagram: "https://instagram.com/yaroslav",
-                        linkedin: "https://www.linkedin.com/in/iaroslav-postovalov/"
+                        linkedin: "https://www.linkedin.com/in/iaroslav-postovalov/",
+                        telegram: "https://t.me/commandertvis"
                     }}
                 />
                 <TeamMember
@@ -71,8 +76,9 @@ const TeaMasters = () => (
                     bio="Petr's expertise in sourcing rare and high&#8209;quality teas ensures our members experience the best."
                     photo={PetyaPic}
                     socialLinks={{
-                        twitter: "https://twitter.com/petrborovlev",
-                        linkedin: "https://linkedin.com/in/petrborovlev"
+                        x: "https://twitter.com/petrborovlev",
+                        linkedin: "https://linkedin.com/in/petrborovlev",
+                        telegram: "https://t.me/petyb"
                     }}
                 />
             </div>
