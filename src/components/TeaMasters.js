@@ -68,7 +68,7 @@ const TeaMasters = () => (
                 <TeamMember
                     name="Petr Borovlev"
                     role="Tea Master & Sourcing Specialist"
-                    bio="Petr's expertise in sourcing rare and high-quality teas ensures our members experience the best."
+                    bio="Petr's expertise in sourcing rare and high&#8209;quality teas ensures our members experience the best."
                     photo={PetyaPic}
                     socialLinks={{
                         twitter: "https://twitter.com/petrborovlev",
@@ -82,19 +82,19 @@ const TeaMasters = () => (
                 <EventPhoto
                     src={CampusGreenImage}
                     alt="Outdoor tea ceremony"
-                    description="Our members enjoying a traditional tea ceremony on Campus Green"
+                    description="We often hold tea ceremonies outdoors, such as on Campus Green"
                 />
                 <EventPhoto
                     src={TeaSelectionImage}
                     alt="Tea tasting event"
-                    description="Exploring a variety of premium teas at our monthly tasting event"
+                    description="Ānjí bái (安吉白) tea leaves opened up beautifully after brewing at our ceremony"
                 />
             </div>
 
             <div className="bg-tea-green p-8 shadow-2xl">
                 <h3 className="text-2xl font-bold mb-4">More Than Just Tea</h3>
                 <p className="text-lg mb-4">
-                    At Thoughts and Tea, we're not just about drinking tea – we're about creating a cultural phenomenon. Our club is a space for intellectual discourse, cultural appreciation, and personal growth.
+                    At Thoughts and Tea, we're not just about drinking tea &mdash; we're about creating a cultural phenomenon. Our club is a space for intellectual discourse, cultural appreciation, and personal growth.
                 </p>
                 <p className="text-lg">
                     From our regular gōngfū chá sessions to our thought-provoking discussions, we're building a community that values mindfulness, diversity, and the rich traditions of tea culture.

@@ -13,7 +13,7 @@ const JoinUs = () => (
                     <ol className="list-decimal list-inside space-y-4 text-lg">
                         <li>Attend our next Tea & Thoughts gathering</li>
                         <li>Complete our membership form (available at events or online)</li>
-                        <li>Pay the semester membership fee (20-40 euros, exact amount TBA)</li>
+                        <li>Pay the semester membership fee (20&ndash;40 &euro;, exact amount TBA)</li>
                     </ol>
                 </div>
                 <div className="text-center">

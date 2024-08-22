@@ -24,13 +24,13 @@ const Events = () => (
                 <EventCard
                     title="Tea & Thoughts: Weekly Gathering"
                     description="Join us for gōngfū chá and thought-provoking discussions every Thursday."
-                    time="7:00 PM - 9:00 PM"
+                    time="7:00 PM&ndash;9:00 PM"
                     location="Student Center, Room 101"
                 />
                 <EventCard
                     title="Cultural Tea Exchange"
                     description="Experience tea traditions from around the world."
-                    time="3:00 PM - 5:00 PM"
+                    time="3:00 PM&ndash;5:00 PM"
                     location="International Student Lounge"
                 />
             </div>
