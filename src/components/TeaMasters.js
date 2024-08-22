@@ -51,9 +51,8 @@ const TeaMasters = () => (
                     bio="Sol is a talented organizer, a poet and a musician. He curates our events and ensures that every gathering is a memorable experience for our members."
                     photo={SolPic}
                     socialLinks={{
-                        instagram: "https://instagram.com/solastri",
-                        twitter: "https://twitter.com/solastri",
-                        linkedin: "https://linkedin.com/in/solastri"
+                        twitter: "https://twitter.com/Sol_Astri",
+                        linkedin: "https://www.linkedin.com/in/daniil-gorlov/"
                     }}
                 />
                 <TeamMember
