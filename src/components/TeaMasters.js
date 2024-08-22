@@ -1,5 +1,5 @@
 import React from 'react';
-import {SiInstagram, SiLinkedin, SiTelegram, SiX} from '@icons-pack/react-simple-icons';
+import {SiInstagram, SiLinkedin, SiTelegram, SiWechat, SiX} from '@icons-pack/react-simple-icons';
 import CampusGreenImage from './images/campusgreen.jpg';
 import TeaSelectionImage from './images/gft2.jpg';
 import SolPic from './images/sol.jpg';
@@ -31,6 +31,11 @@ const TeamMember = ({ name, role, bio, photo, socialLinks }) => (
             {socialLinks.telegram && (
                 <a href={socialLinks.telegram} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
                     <SiTelegram size={24} />
+                </a>
+            )}
+            {socialLinks.wechat && (
+                <a href={socialLinks.wechat} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
+                    <SiWechat size={24} />
                 </a>
             )}
         </div>
@@ -67,7 +72,8 @@ const TeaMasters = () => (
                     photo={YariloPic}
                     socialLinks={{
                         linkedin: "https://www.linkedin.com/in/iaroslav-postovalov/",
-                        telegram: "https://t.me/commandertvis"
+                        telegram: "https://t.me/commandertvis",
+                        wechat: "weixin://dl/chat?commandertvis"
                     }}
                 />
                 <TeamMember
