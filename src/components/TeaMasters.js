@@ -68,9 +68,10 @@ const TeaMasters = () => (
                 <TeamMember
                     name="Iaroslav Postovalov"
                     role="VP & Chief Tea Officer"
-                    bio="Iaroslav brings years of experience in traditional tea ceremonies and a deep understanding of tea varieties, technology, and history. His enthusiasm for connecting people with this rich tradition make our events truly special."
+                    bio="Iaroslav brings years of experience in traditional tea ceremonies and a deep understanding of tea varieties, technology, and history. His enthusiasm for connecting people with this rich tradition make our meetings truly special."
                     photo={YariloPic}
                     socialLinks={{
+                        x: "https://x.com/CMDR_Tvis",
                         linkedin: "https://www.linkedin.com/in/iaroslav-postovalov/",
                         telegram: "https://t.me/commandertvis",
                         wechat: "weixin://dl/chat?commandertvis"
@@ -109,7 +110,7 @@ const TeaMasters = () => (
                     At Thoughts and Tea, we're not just about drinking tea &mdash; we're about creating a cultural phenomenon. Our club is a space for intellectual discourse, cultural appreciation, and personal growth.
                 </p>
                 <p className="text-lg">
-                    From our regular gōngfū chá sessions to our thought-provoking discussions, we're building a community that values mindfulness, diversity, and the rich traditions of tea culture.
+                    From our regular gōngfū chá sessions to our thought&#8209;provoking discussions, we're building a community that values mindfulness, diversity, and the rich traditions of tea culture.
                 </p>
             </div>
         </div>

@@ -7,10 +7,10 @@ const Footer = () => (
             <p className="text-lg">
                 Contact:{' '}
                 <a
-                    href="mailto:info@thoughtsand.teaguild.dev"
+                    href="mailto:me@danielsol.dev"
                     className="underline hover:text-tea-brown transition duration-300"
                 >
-                    info@thoughtsand.teaguild.dev
+                    me@danielsol.dev
                 </a>
             </p>
         </div>

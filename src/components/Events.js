@@ -1,10 +1,10 @@
 import React from 'react';
-import { Book, Film, Coffee, Music, Mic, Brain, Lightbulb, Globe } from 'lucide-react';
+import {Book, Film, Coffee, Mic, Globe, BookOpenText} from 'lucide-react';
 import PoetCandle from './images/poet_candle.png';
 
-const EventTypeCard = ({ Icon, title, description }) => (
+const EventTypeCard = ({Icon, title, description}) => (
     <div className="flex items-center bg-tea-brown bg-opacity-20 p-4 rounded-lg mb-2">
-        <Icon size={32} className="mr-4 text-tea-white flex-shrink-0" />
+        <Icon size={32} className="mr-4 text-tea-white flex-shrink-0"/>
         <div>
             <h3 className="text-xl font-bold text-tea-white mb-2">{title}</h3>
             <p className="text-tea-white">{description}</p>
@@ -22,27 +22,30 @@ const Events = () => (
                          className="w-full h-auto object-cover shadow-2xl mb-6"/>
                     <div className="bg-tea-brown bg-opacity-10 p-6">
                         <h3 className="text-2xl font-serif mb-4">Featured Event: Poetic Brew</h3>
+                        {/*TODO NOT ONLY POETIC !!!!!!!!!*/}
                         <p className="mb-4">
-                            Our monthly literary gathering where tea and verses intertwine. Here's what to expect:
+                            Our literary gathering where tea and verses intertwine. Here's what to
+                            expect:
                         </p>
                         <ul className="list-disc list-inside space-y-2 mb-4">
-                            <li>Candlelit ambiance for an intimate atmosphere</li>
+                            <li>Soft lighting for a cozy, intimate vibe</li>
                             <li>A curated selection of teas to complement the mood</li>
                             <li>Open mic for sharing poetry in any language</li>
                             <li>Thoughtful discussions on literary themes and techniques</li>
                         </ul>
                         <p className="text-sm italic">
-                            "Last month, we explored haikus while sipping on rare Gyokuro. The interplay of concise
-                            Japanese poetry and the umami-rich tea led to fascinating insights into the art of
-                            minimalism." - Sol Astri, Event Coordinator
+                            "Green tea leaves unfurl<br/>
+                            Whispered verses take flight here<br/>
+                            Minds steep in stillness."<br/> &mdash; Sol Astri, Event Coordinator
                         </p>
                     </div>
                 </div>
                 <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
                     <p className="mb-8 text-xl leading-relaxed">
-                        At Thoughts and Tea, we believe that the ritual of tea drinking is the perfect backdrop for
-                        intellectual growth and cultural exchange. Our events are carefully crafted to stimulate both
-                        the mind and the palate, creating a unique space where ideas flow as freely as our carefully
+                        At Thoughts and Tea, we believe that the tea drinking ritual is the perfect backdrop for
+                        intellectual growth and intercultural exchange. Our events are carefully moderated to stimulate
+                        both
+                        the mind and the palate, creating a space where ideas flow as freely as our carefully
                         selected teas.
                     </p>
                     <h3 className="text-2xl font-serif mb-4">The Essence of Our Gatherings</h3>
@@ -54,38 +57,35 @@ const Events = () => (
                         <EventTypeCard
                             Icon={Coffee}
                             title="Gōngfū Chá Ceremonies"
-                            description="Our flagship events where the art of Chinese tea ceremony meets intellectual discourse."
+                            description="Our flagship events where we explore the art of Chinese tea ceremony and get to know each other better."
                         />
                         <EventTypeCard
                             Icon={Book}
-                            title="Literary Evenings: Poetic Brew"
+                            title="Poetic Brew"
                             description="Share beloved poems or original works in a candlelit atmosphere, fostering literary appreciation across cultures."
                         />
                         <EventTypeCard
                             Icon={Film}
-                            title="Anime Marathons: Eastern Reflections"
-                            description="Explore themes in Japanese animation, discussing cultural nuances over traditional green teas."
+                            title="Film/TV Screenings"
+                            description="Explore themes in various media, discussing cultural nuances over traditional teas."
                         />
-                        <EventTypeCard
-                            Icon={Mic}
-                            title="Tea House Debates"
-                            description="Engage in structured debates on contemporary issues, with tea serving as a calming influence for heated discussions."
-                        />
+                        <EventTypeCard Icon={Mic}
+                                       title="Tea House Debates"
+                                       description="Engage in structured debates on contemporary issues, where tea makes discussions even more heated."/>
+                        <EventTypeCard Icon={BookOpenText} title="Tea Study Sessions"
+                            description="Get into the right flow for exam preparation, staying focused with tea."/>
+                        <EventTypeCard Icon={Globe} title="Different Tea Traditions" description="From samovar to masala chai&mdash;we will be experimenting with many other cultures of tea drinking."/>
                     </div>
                     <h3 className="text-2xl font-serif mb-4">Why Our Events Matter</h3>
                     <p className="mb-6 text-lg">
                         In the fast-paced university environment, our events offer:
                     </p>
                     <ul className="list-disc list-inside space-y-2 mb-8 text-lg">
-                        <li>A sanctuary for mindful interaction and reflection</li>
-                        <li>Opportunities to explore diverse perspectives and cultures</li>
-                        <li>A unique blend of sensory and intellectual stimulation</li>
+                        <li>A quiet shelter for mindful interaction and self-reflection</li>
+                        <li>Opportunities to learn from different backgrounds and experiences</li>
+                        <li>A unique blend of aromatic, tactile and intellectual stimulation</li>
                         <li>A chance to build meaningful connections beyond academic boundaries</li>
                     </ul>
-                    <p className="text-lg italic mb-8">
-                        "In the steam of a tea cup, we find the clarity to see the world anew and the warmth to embrace
-                        diverse thoughts."
-                    </p>
                 </div>
             </div>
         </div>

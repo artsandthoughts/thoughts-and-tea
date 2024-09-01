@@ -12,7 +12,7 @@ const JoinUs = () => (
                     <h3 className="text-2xl font-bold mb-6 text-tea-red">How to Join</h3>
                     <ol className="list-decimal list-inside space-y-4 text-lg">
                         <li>Attend our next Tea & Thoughts gathering</li>
-                        <li>Complete our membership form (available at events or online)</li>
+                        <li>Complete our membership form and join our chat for announcements</li>
                         <li>Pay the semester membership fee (20&ndash;40 &euro;, exact amount TBA)</li>
                     </ol>
                 </div>
