@@ -4,7 +4,7 @@ import Navigation from './components/Navigation';
 import About from './components/About';
 import Events from './components/Events';
 import GongfuCha from './components/GongfuCha';
-import TeaMasters from './components/TeaMasters';
+import TeaCrew from './components/TeaCrew';
 import JoinUs from './components/JoinUs';
 import Footer from './components/Footer';
 import './index.css';
@@ -20,7 +20,7 @@ const App = () => {
                 <About />
                 <Events />
                 <GongfuCha />
-                <TeaMasters />
+                <TeaCrew />
                 <JoinUs />
             </main>
             <Footer />

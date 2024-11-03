@@ -32,8 +32,6 @@ const GongfuCha = () => (
                         <FeatureItem Icon={Award} text="Traditional technique" />
                         <FeatureItem Icon={Clock} text="Patience and precision" />
                         <FeatureItem Icon={Users} text="Shared experience" />
-                        <FeatureItem Icon={Heart} text="Mindful appreciation" />
-                        <FeatureItem Icon={Brain} text="Sensory engagement" />
                     </div>
                     <h3 className="text-2xl font-serif mb-4">Why Gōngfū Chá Matters</h3>
                        <p className="mb-6 text-lg">

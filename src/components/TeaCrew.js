@@ -5,51 +5,57 @@ import TeaSelectionImage from './images/gft2.jpg';
 import SolPic from './images/sol.jpg';
 import YariloPic from './images/yarilo.jpg';
 import PetyaPic from './images/petya.jpg';
+import DavidPic from './images/david.jpg';
 
-const TeamMember = ({ name, role, bio, photo, socialLinks }) => (
+const TeamMember = ({name, role, bio, photo, socialLinks}) => (
     <div className="bg-tea-white p-6 shadow-xl">
-        <img src={photo} alt={name} className="w-full object-cover mb-4" />
+        <img src={photo} alt={name} className="w-full object-cover mb-4"/>
         <h3 className="text-2xl font-bold text-tea-red mb-2">{name}</h3>
         <p className="text-tea-green font-semibold mb-2">{role}</p>
         <p className="mb-4 text-tea-black">{bio}</p>
         <div className="flex space-x-4">
             {socialLinks.instagram && (
-                <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <SiInstagram size={24} />
+                <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer"
+                   className="text-tea-brown hover:text-tea-red">
+                    <SiInstagram size={24}/>
                 </a>
             )}
             {socialLinks.x && (
-                <a href={socialLinks.x} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <SiX size={24} />
+                <a href={socialLinks.x} target="_blank" rel="noopener noreferrer"
+                   className="text-tea-brown hover:text-tea-red">
+                    <SiX size={24}/>
                 </a>
             )}
             {socialLinks.linkedin && (
-                <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <SiLinkedin size={24} />
+                <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer"
+                   className="text-tea-brown hover:text-tea-red">
+                    <SiLinkedin size={24}/>
                 </a>
             )}
             {socialLinks.telegram && (
-                <a href={socialLinks.telegram} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <SiTelegram size={24} />
+                <a href={socialLinks.telegram} target="_blank" rel="noopener noreferrer"
+                   className="text-tea-brown hover:text-tea-red">
+                    <SiTelegram size={24}/>
                 </a>
             )}
             {socialLinks.wechat && (
-                <a href={socialLinks.wechat} target="_blank" rel="noopener noreferrer" className="text-tea-brown hover:text-tea-red">
-                    <SiWechat size={24} />
+                <a href={socialLinks.wechat} target="_blank" rel="noopener noreferrer"
+                   className="text-tea-brown hover:text-tea-red">
+                    <SiWechat size={24}/>
                 </a>
             )}
         </div>
     </div>
 );
 
-const EventPhoto = ({ src, alt, description }) => (
+const EventPhoto = ({src, alt, description}) => (
     <div className="bg-tea-white p-4 shadow-xl">
-        <img src={src} alt={alt} className="w-full h-96 object-cover mb-4" />
+        <img src={src} alt={alt} className="w-full h-96 object-cover mb-4"/>
         <p className="text-sm text-tea-green">{description}</p>
     </div>
 );
 
-const TeaMasters = () => (
+const TeaCrew = () => (
     <section id="tea-masters" className="py-20 bg-tea-black text-tea-white">
         <div className="container mx-auto px-4">
             <h2 className="section-title text-tea-white mb-16">Our Tea Crew</h2>
@@ -68,7 +74,7 @@ const TeaMasters = () => (
                 <TeamMember
                     name="Iaroslav Postovalov"
                     role="VP & Chief Tea Officer"
-                    bio="Iaroslav brings years of experience in traditional tea ceremonies and a deep understanding of tea varieties, technology, and history. His enthusiasm for connecting people with this rich tradition make our meetings truly special."
+                    bio="Iaroslav brings years of experience in tea ceremonies and a deep knowledge of tea, from its history to its varieties. His passion for sharing this tradition makes our gatherings unique."
                     photo={YariloPic}
                     socialLinks={{
                         x: "https://x.com/CMDR_Tvis",
@@ -79,14 +85,21 @@ const TeaMasters = () => (
                 />
                 <TeamMember
                     name="Petr Borovlev"
-                    role="Tea Master & Sourcing Specialist"
-                    bio="Petr's expertise in sourcing rare and high&#8209;quality teas ensures our members experience the best."
+                    role="Tea Master"
+                    bio="Our shy tea apprentice who knows more dark tea secrets than he lets on."
                     photo={PetyaPic}
                     socialLinks={{
                         x: "https://twitter.com/petrborovlev",
                         linkedin: "https://linkedin.com/in/petrborovlev",
                         telegram: "https://t.me/petyb"
                     }}
+                />
+                <TeamMember
+                    name="David Dashevskii"
+                    role="Tea Master & Resident Maid"
+                    bio="A backup tea master (in case our main ones dramatically perish) and resident maid. Enjoys only the strongest pu erh."
+                    photo={DavidPic}
+                    socialLinks={{telegram: "https://t.me/svalbardpyramiden"}}
                 />
             </div>
 
@@ -107,14 +120,17 @@ const TeaMasters = () => (
             <div className="bg-tea-green p-8 shadow-2xl">
                 <h3 className="text-2xl font-bold mb-4">More Than Just Tea</h3>
                 <p className="text-lg mb-4">
-                    At Thoughts and Tea, we're not just about drinking tea &mdash; we're about creating a cultural phenomenon. Our club is a space for intellectual discourse, cultural appreciation, and personal growth.
+                    At Thoughts and Tea, we're not just about drinking tea &mdash; we're about creating a cultural
+                    phenomenon. Our club is a space for intellectual discourse, cultural appreciation, and personal
+                    growth.
                 </p>
                 <p className="text-lg">
-                    From our regular gōngfū chá sessions to our thought&#8209;provoking discussions, we're building a community that values mindfulness, diversity, and the rich traditions of tea culture.
+                    From our regular gōngfū chá sessions to our thought&#8209;provoking discussions, we're building a
+                    community that values mindfulness, diversity, and the rich traditions of tea culture.
                 </p>
             </div>
         </div>
     </section>
 );
 
-export default TeaMasters;
+export default TeaCrew;
