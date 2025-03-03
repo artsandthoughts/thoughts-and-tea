@@ -37,6 +37,23 @@ nix build '.#container'
 docker load < result
 ```
 
+### Deployment
+
+The container is automatically built and published to GitHub Container Registry via GitHub Actions when changes are pushed to the main branch.
+
+You can run the published container with:
+
+```bash
+# Pull the latest container
+docker pull ghcr.io/thoughtsandtea/thoughts-and-tea:latest
+
+# Run with Docker
+docker run -p 80:80 ghcr.io/thoughtsandtea/thoughts-and-tea:latest
+
+# Or use Docker Compose
+docker-compose up
+```
+
 ## Traditional NPM Commands
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

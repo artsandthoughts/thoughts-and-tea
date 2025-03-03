@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    image: ghcr.io/thoughtsandtea/thoughts-and-tea:latest
+    container_name: thoughts-and-tea
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    networks:
+      - tea-network
+
+networks:
+  tea-network:
+    driver: bridge
