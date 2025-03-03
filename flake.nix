@@ -56,9 +56,8 @@
             
             src = ./.;
             
-            # This will need to be updated with the correct hash
-            # Run `nix flake update` after initial creation to get the correct hash
-            npmDepsHash = "sha256-0000000000000000000000000000000000000000000=";
+            # Hash obtained from the previous build attempt
+            npmDepsHash = "sha256-TLAgSHO+IYdCegcFkdCwE5MuciNhkRteg65rUNSBIPM=";
             
             buildPhase = ''
               export HOME=$(mktemp -d)
