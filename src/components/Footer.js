@@ -29,14 +29,14 @@ const Footer = () => (
                     </p>
                     
                     <div className="flex flex-col space-y-2">
-                        <FooterLink href="mailto:me@danielsol.dev" icon={Mail}>
+                        <FooterLink href="mailto:sol@astrius.dev" icon={Mail}>
                             me@danielsol.dev
                         </FooterLink>
                         <FooterLink href="https://calendar.google.com" icon={Calendar}>
                             View our event calendar
                         </FooterLink>
-                        <FooterLink href="https://maps.google.com" icon={MapPin}>
-                            University Campus, Building 5
+                        <FooterLink href="https://maps.app.goo.gl/idKS2Vvp6c6QBWSP7" icon={MapPin}>
+                            University Campus, Campus Activity Center
                         </FooterLink>
                     </div>
                 </div>
