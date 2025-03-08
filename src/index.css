@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply bg-tea-white text-tea-black;
+        @apply bg-arts-white text-arts-black;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -16,15 +16,15 @@
 
 @layer components {
     .btn {
-        @apply bg-tea-red text-tea-white py-3 px-8 rounded-none hover:bg-tea-brown transition duration-300 transform hover:-translate-y-1 hover:shadow-lg;
+        @apply bg-arts-purple text-arts-white py-3 px-8 rounded-none hover:bg-arts-blue transition duration-300 transform hover:-translate-y-1 hover:shadow-lg;
     }
 
     .section-title {
-        @apply text-4xl font-bold mb-12 text-left font-serif text-tea-green;
+        @apply text-4xl font-bold mb-12 text-left font-serif text-arts-purple;
     }
 
     .card {
-        @apply bg-tea-white p-8 border-l-8 border-tea-brown shadow-xl transition duration-300 hover:shadow-2xl;
+        @apply bg-arts-white p-8 border-l-8 border-arts-gold shadow-xl transition duration-300 hover:shadow-2xl;
     }
 
     .font-bold {

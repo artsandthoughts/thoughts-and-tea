@@ -3,24 +3,24 @@ import { Book, Film, Coffee, Mic, Globe, BookOpenText } from 'lucide-react';
 import PoetCandle from './images/poet_candle_2.jpg';
 
 const EventTypeCard = ({ Icon, title, description }) => (
-    <div className="flex items-center bg-tea-brown bg-opacity-20 p-4 rounded-lg mb-2">
-        <Icon size={24} className="mr-4 text-tea-white flex-shrink-0" />
+    <div className="flex items-center bg-arts-gold bg-opacity-20 p-4 rounded-lg mb-2">
+        <Icon size={24} className="mr-4 text-arts-white flex-shrink-0" />
         <div>
-            <h3 className="text-lg font-bold text-tea-white mb-1">{title}</h3>
-            <p className="text-sm text-tea-white">{description}</p>
+            <h3 className="text-lg font-bold text-arts-white mb-1">{title}</h3>
+            <p className="text-sm text-arts-white">{description}</p>
         </div>
     </div>
 );
 
 const Events = () => (
-    <section id="events" className="py-16 bg-tea-green text-tea-white">
+    <section id="events" className="py-16 bg-arts-blue text-arts-white">
         <div className="container mx-auto px-4">
-            <h2 className="section-title text-4xl text-tea-white font-serif mb-8">Thoughtful Events</h2>
+            <h2 className="section-title text-4xl text-arts-white font-serif mb-8">Club Events</h2>
             <div className="flex flex-col lg:flex-row items-start justify-between">
                 <div className="lg:w-5/12 mb-8 lg:mb-0">
-                    <img src={PoetCandle} alt="Literary Evening at Thoughts and Tea"
+                    <img src={PoetCandle} alt="Literary Evening at Arts & Thoughts"
                          className="w-full h-auto object-cover shadow-2xl mb-6" />
-                    <div className="bg-tea-brown bg-opacity-10 p-6">
+                    <div className="bg-arts-gold bg-opacity-10 p-6">
                         <h3 className="text-2xl font-serif mb-4">Featured Event: Poetic Brew</h3>
                         <p className="mb-4">
                             Our literary gathering where tea and verses intertwine. Here's what to expect:
@@ -40,9 +40,9 @@ const Events = () => (
                 </div>
                 <div className="lg:w-1/2 lg:pl-8">
                     <p className="mb-6 text-lg leading-relaxed">
-                        At Thoughts and Tea, we believe that the tea drinking ritual is the perfect backdrop for
-                        intellectual growth and intercultural exchange. Our events are carefully moderated to stimulate
-                        both the mind and the palate, creating a space where ideas flow as freely as our carefully
+                        At Arts & Thoughts, we continue to embrace the tea drinking ritual as a perfect backdrop for
+                        intellectual growth and creative expression. Our events are carefully moderated to stimulate
+                        both the mind and the palate, creating a space where artistic ideas and scientific discussions flow as freely as our carefully
                         selected teas.
                     </p>
                     <h3 className="text-2xl font-serif mb-4">The Essence of Our Gatherings</h3>

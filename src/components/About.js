@@ -6,18 +6,19 @@ const About = () => (
             <h2 className="section-title">About Us</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="card">
-                    <h3 className="text-2xl font-bold mb-4 text-tea-red">Our Mission</h3>
-                    <p>To create a sanctuary for tea enthusiasts and thinkers, fostering intellectual growth through the art of tea.</p>
+                    <h3 className="text-2xl font-bold mb-4 text-arts-purple">Our Mission</h3>
+                    <p>To create a sanctuary for artists, scientists, and thinkers, fostering intellectual growth and creative expression through various art forms and the mindful appreciation of tea.</p>
                 </div>
                 <div className="card">
-                    <h3 className="text-2xl font-bold mb-4 text-tea-red">Our Vision</h3>
-                    <p>To become the premier hub for tea culture and intellectual discourse within our university and beyond.</p>
+                    <h3 className="text-2xl font-bold mb-4 text-arts-purple">Our Vision</h3>
+                    <p>To become the premier hub for artistic expression, intellectual discourse, and tea culture within our university and beyond.</p>
                 </div>
                 <div className="card">
-                    <h3 className="text-2xl font-bold mb-4 text-tea-red">Our Values</h3>
+                    <h3 className="text-2xl font-bold mb-4 text-arts-purple">Our Values</h3>
                     <ul className="list-none space-y-2">
                         <li>• Inclusivity and Diversity</li>
                         <li>• Intellectual Curiosity</li>
+                        <li>• Creative Expression</li>
                         <li>• Cultural Appreciation</li>
                         <li>• Mindfulness and Reflection</li>
                     </ul>

@@ -3,8 +3,9 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Events from './components/Events';
-import GongfuCha from './components/GongfuCha';
-import TeaCrew from './components/TeaCrew';
+import ArtsPrograms from './components/ArtsPrograms';
+import TeaCeremony from './components/GongfuCha';
+import CreativeTeam from './components/CreativeTeam';
 import JoinUs from './components/JoinUs';
 import Footer from './components/Footer';
 import './index.css';
@@ -19,8 +20,9 @@ const App = () => {
             <main>
                 <About />
                 <Events />
-                <GongfuCha />
-                <TeaCrew />
+                <ArtsPrograms />
+                <TeaCeremony />
+                <CreativeTeam />
                 <JoinUs />
             </main>
             <Footer />
