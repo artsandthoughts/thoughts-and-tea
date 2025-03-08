@@ -1,22 +1,46 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 
+const NavigationItem = ({ item }) => (
+    <li className="group">
+        <a 
+            href={`#${item.toLowerCase().replace(' ', '-')}`} 
+            className="block py-3 px-5 text-arts-medium hover:text-arts-accent transition-all duration-300 text-base font-medium"
+        >
+            {item}
+            <span className="block h-px w-0 bg-arts-accent group-hover:w-full transition-all duration-300 mt-1 opacity-0 group-hover:opacity-100"></span>
+        </a>
+    </li>
+);
+
 const Navigation = ({ isMenuOpen, setIsMenuOpen }) => (
-    <nav className="bg-arts-blue text-arts-white sticky top-0 z-10">
-        <div className="container mx-auto px-4 py-4">
+    <nav className="bg-arts-white sticky top-0 z-50 shadow-subtle border-b border-arts-light">
+        <div className="container mx-auto">
             <div className="flex justify-between items-center">
-                <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                <div className="py-3 px-4 flex items-center">
+                    <span className="font-serif text-arts-accent text-xl font-semibold">A&T</span>
+                </div>
+                
+                <button 
+                    className="md:hidden px-4 py-3 text-arts-medium hover:text-arts-accent transition-colors duration-300"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
                 </button>
-                <ul className={`${isMenuOpen ? 'block' : 'hidden'} md:flex space-y-4 md:space-y-0 md:space-x-8 mt-4 md:mt-0`}>
-                    {['About', 'Events', 'Arts', 'Gōngfū Chá', 'Join Us'].map((item) => (
-                        <li key={item}>
-                            <a href={`#${item.toLowerCase().replace(' ', '-')}`} className="hover:text-arts-gold transition duration-300 text-lg">
-                                {item}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+                
+                <div className={`${
+                    isMenuOpen 
+                        ? 'absolute top-full left-0 right-0 bg-arts-white border-b border-arts-light shadow-subtle' 
+                        : 'hidden'
+                    } md:block md:static md:bg-transparent md:border-0 md:shadow-none`}
+                >
+                    <ul className="md:flex py-2 px-4 md:px-0">
+                        {['About', 'Events', 'Arts', 'Gōngfū Chá', 'Join Us'].map((item) => (
+                            <NavigationItem key={item} item={item} />
+                        ))}
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>

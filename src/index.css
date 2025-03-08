@@ -1,33 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Noto+Serif:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Serif:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Design Concept: Modern Tea Ceremony
+  Inspired by the precision and elegance of traditional tea ceremonies,
+  with clean lines, thoughtful spacing, and balanced geometry.
+*/
+
 @layer base {
     body {
-        @apply bg-arts-white text-arts-black;
+        @apply bg-arts-white text-arts-dark font-sans leading-relaxed;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Noto Serif', serif;
+        @apply font-serif tracking-tight leading-tight text-arts-dark;
+    }
+    
+    a {
+        @apply transition-all duration-300;
+    }
+
+    p {
+        @apply leading-relaxed;
     }
 }
 
 @layer components {
     .btn {
-        @apply bg-arts-purple text-arts-white py-3 px-8 rounded-none hover:bg-arts-blue transition duration-300 transform hover:-translate-y-1 hover:shadow-lg;
+        @apply bg-arts-accent text-arts-white py-3 px-8 rounded-full hover:bg-arts-medium
+               transition duration-300 inline-flex items-center gap-2
+               border border-transparent hover:border-arts-accent
+               focus:outline-none focus:ring-2 focus:ring-arts-accent focus:ring-offset-2
+               shadow-subtle;
     }
 
     .section-title {
-        @apply text-4xl font-bold mb-12 text-left font-serif text-arts-purple;
+        @apply text-3xl md:text-4xl font-bold mb-12 text-left font-serif text-arts-dark relative pb-2
+               border-b-2 border-arts-accent;
     }
 
     .card {
-        @apply bg-arts-white p-8 border-l-8 border-arts-gold shadow-xl transition duration-300 hover:shadow-2xl;
+        @apply bg-arts-white p-8 border border-arts-light shadow-subtle 
+               transition duration-300 hover:shadow-elevate rounded-lg;
     }
-
-    .font-bold {
-        font-weight: 500 !important;
+    
+    .container {
+        @apply max-w-6xl px-4 mx-auto;
+    }
+    
+    .divider {
+        @apply h-px w-full bg-arts-light my-8;
+    }
+    
+    /* Clean underline effect for headers */
+    .brush-title {
+        @apply relative inline-block;
+    }
+    
+    .brush-title:after {
+        @apply content-[''] absolute -bottom-2 left-0 w-1/2 h-0.5 bg-arts-accent;
+    }
+    
+    /* Circular accent element */
+    .circle-accent {
+        @apply inline-flex items-center justify-center rounded-full border border-arts-accent;
+    }
+    
+    /* Circular image container */
+    .circle-image {
+        @apply overflow-hidden rounded-full;
+    }
+    
+    /* Emphasis text style */
+    .accent-text {
+        @apply text-arts-accent font-medium;
     }
 }
